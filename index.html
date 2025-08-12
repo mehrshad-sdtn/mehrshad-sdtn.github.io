@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mehrshad Saadatinia</title>
+  <meta name="description" content="Mehrshad Saadatinia — Graduate student at USC. Research in Deep Learning, Representation Learning, Bioinformatics, and LLMs." />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111316;
+      --muted:#5a6270;
+      --card:#f6f7f9;
+      --border:#e8e9ee;
+      --accent:#2563eb; /* tweak this if you want a different accent */
+      --accent-ink:#0f172a;
+      --radius:14px;
+      --shadow: 0 1px 2px rgba(16,24,40,.04), 0 4px 12px rgba(16,24,40,.06);
+      --maxw: 980px;
+    }
+    html,body{background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.55}
+    *{box-sizing:border-box}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--maxw);margin:auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter: blur(10px);border-bottom:1px solid var(--border);z-index:10}
+    .nav{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid var(--border)}
+    .brand .name{font-weight:700;letter-spacing:.2px}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap}
+    .tab{border:1px solid var(--border);background:#fff;padding:8px 12px;border-radius:10px;font-size:14px}
+    .tab[aria-selected="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+    main{padding:22px 0}
+    section[role="tabpanel"]{display:none;animation:fade .15s ease}
+    section[role="tabpanel"][data-active="true"]{display:block}
+    @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+    /* Cards and layout */
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.about-layout{grid-template-columns:220px 1fr}}
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:#fff;font-size:12px;margin-right:6px;margin-bottom:6px}
+
+    /* Publications */
+    .pub{display:grid;grid-template-columns:120px 1fr;gap:14px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px}
+    .pub + .pub{margin-top:12px}
+    .thumb{width:120px;height:90px;border-radius:8px;object-fit:cover;border:1px solid var(--border);background:#f3f4f6}
+    .pub h3{margin:.1rem 0 .15rem 0;font-size:18px}
+    .meta{font-size:13px;color:var(--muted)}
+    .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);background:#fff;border-radius:10px;padding:6px 10px;font-size:13px}
+    .btn:hover{border-color:#d7d8df}
+    details{margin-top:6px}
+    details summary{cursor:pointer;color:var(--accent);font-size:13px}
+
+    /* Experience */
+    .xp{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px}
+    .xp h4{margin:.1rem 0;font-size:16px}
+    .xp .top{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+    .xp .where{color:var(--muted);font-size:13px}
+    ul.tight{margin:.5rem 0 .25rem 20px}
+    ul.tight li{margin:.2rem 0}
+
+    footer{margin:32px 0 8px 0;color:var(--muted);font-size:13px;text-align:center}
+    .links{display:flex;flex-wrap:wrap;gap:8px}
+    .inline-links a{margin-right:10px}
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#about">Skip to content</a>
+  <header>
+    <div class="wrap nav" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <img src="assets/headshot.jpg" alt="Headshot of Mehrshad Saadatinia" />
+        <div>
+          <div class="name">Mehrshad Saadatinia</div>
+          <div class="muted" style="font-size:13px">Graduate Student · University of Southern California</div>
+        </div>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Sections">
+        <button class="tab" role="tab" aria-controls="about" aria-selected="true">About</button>
+        <button class="tab" role="tab" aria-controls="pubs" aria-selected="false">Publications</button>
+        <button class="tab" role="tab" aria-controls="xp" aria-selected="false">Experience</button>
+        <a class="tab" href="assets/PHD_MehrshadSaadatinia.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- ABOUT -->
+    <section id="about" class="grid about-layout card" role="tabpanel" aria-labelledby="About" data-active="true">
+      <div>
+        <img class="thumb" style="width:100%;height:auto;aspect-ratio:3/4" src="assets/headshot.jpg" alt="Mehrshad Saadatinia portrait" />
+      </div>
+      <div>
+        <h1 style="margin:.2rem 0 .4rem 0;">About</h1>
+        <p>
+          I’m a graduate student in Computer Science at the University of Southern California (GPA last two semesters: 3.92/4.0). 
+          My research interests span <strong>Deep Learning</strong>, <strong>Representation Learning</strong>, <strong>Bioinformatics</strong>, and <strong>Large Language Models</strong>. 
+          I’m particularly interested in graph-based representations for metagenomic communities and reliable, efficient LLM tooling for deep research.
+        </p>
+
+        <div class="inline-links" style="margin:10px 0 12px 0;">
+          <a href="mailto:saadatin@usc.edu">saadatin@usc.edu</a> ·
+          <a href="https://www.linkedin.com/in/mehrshad-saadatinia-a1bb1b19a/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/mehrshad-sdtn" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://scholar.google.com/citations?user=ZZhMlLYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+
+        <div class="grid" style="grid-template-columns:1fr;gap:10px">
+          <div class="card" style="background:#fff">
+            <h3 style="margin:.2rem 0 .4rem 0;">Education</h3>
+            <div class="grid" style="gap:8px">
+              <div>
+                <strong>University of Southern California</strong> — MS in Computer Science
+                <div class="muted">Los Angeles, CA · Jan 2024 – Present</div>
+                <div class="muted">GPA (last two semesters): 3.92/4.0</div>
+              </div>
+              <div>
+                <strong>Shahid Beheshti University</strong> — BSc in Computer Engineering
+                <div class="muted">Tehran, Iran · Sep 2018 – Feb 2023</div>
+                <div class="muted">Cumulative GPA: 17.40/20 (~3.7/4.0) · Best B.Sc thesis</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="background:#fff">
+            <h3 style="margin:.2rem 0 .4rem 0;">Coursework</h3>
+            <div class="links">
+              <span class="pill">Deep Learning and Applications (A)</span>
+              <span class="pill">Applied NLP (A)</span>
+              <span class="pill">Machine Learning (A-)</span>
+              <span class="pill">Advanced Computer Vision (A)</span>
+            </div>
+          </div>
+
+          <div class="card" style="background:#fff">
+            <h3 style="margin:.2rem 0 .4rem 0;">Skills</h3>
+            <div class="muted" style="font-size:14px">
+              <strong>Languages:</strong> Python, C/C++ (OpenGL), R, Java, JavaScript, MATLAB<br/>
+              <strong>ML/DL:</strong> PyTorch, TensorFlow/Keras, Scikit-Learn, LangChain<br/>
+              <strong>Tech:</strong> Git, Linux, Docker, Google Cloud, SQL, MongoDB, Vector DBs, REST<br/>
+              <strong>Other:</strong> Mathematics, Statistics, Generative Models, RAG
+            </div>
+          </div>
+
+          <div class="card" style="background:#fff">
+            <h3 style="margin:.2rem 0 .4rem 0;">Honors & Awards</h3>
+            <ul class="tight">
+              <li>Best B.Sc thesis award (CSE Dept.)</li>
+              <li>Top 0.2% among 300,000 participants — 2018 nationwide university entrance exam</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="pubs" role="tabpanel" aria-labelledby="Publications" class="" data-active="false">
+      <h2 style="margin:0 0 10px 0">Publications</h2>
+      <div class="muted" style="margin-bottom:12px">Vertically stacked; each entry includes a thumbnail and brief description.</div>
+
+      <!-- IEEE Access -->
+      <article class="pub">
+        <img class="thumb" src="assets/papers/schizo-augment.jpg" alt="Thumbnail: Schizophrenia diagnosis via generative augmentation" />
+        <div>
+          <h3>An Explainable Deep Learning-Based Method For Schizophrenia Diagnosis Using Generative Data-Augmentation</h3>
+          <div class="meta">M. Saadatinia, A. Salimi-Badr · <em>IEEE Access</em>, 2024</div>
+          <p>Deep CNN-based pipeline with VAE augmentation for schizophrenia diagnosis; includes explainability components.</p>
+          <div class="actions">
+            <a class="btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10599257" target="_blank" rel="noopener">PDF</a>
+            <a class="btn" href="https://github.com/mehrshad-sdtn/schizo-detector" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Nature Communications -->
+      <article class="pub">
+        <img class="thumb" src="assets/papers/metabolome-age.jpg" alt="Thumbnail: Multi-organ metabolome biological age" />
+        <div>
+          <h3>Multi-organ metabolome biological age implicates cardiometabolic conditions and mortality risk</h3>
+          <div class="meta">F. Anagnostakis, S. Ko, <strong>M. Saadatinia</strong>, J. Wang, C. Davatzikos, J. Wen · <em>Nature Communications</em>, 2025</div>
+          <p>Links biological age derived from multi-organ metabolomics to cardiometabolic conditions and mortality risk.</p>
+          <div class="actions">
+            <a class="btn" href="https://www.nature.com/articles/s41467-025-59964-z" target="_blank" rel="noopener">Article</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- EvoGLAD (under review) -->
+      <article class="pub">
+        <img class="thumb" src="assets/papers/evoglad.jpg" alt="Thumbnail: EvoGLAD anomaly detection in metagenomics" />
+        <div>
+          <h3>EvoGLAD: Evolving Graph-Level Representations for Anomaly Detection in Metagenomic Communities</h3>
+          <div class="meta">M. Saadatinia, W. Neiswanger · <em>AAAI-2026</em> (under review), 2025</div>
+          <p>GVAE + temporal modeling with ecological priors for unsupervised anomaly detection in evolving metagenomic communities.</p>
+          <div class="actions">
+            <!-- add links when available -->
+            <a class="btn" href="#" aria-disabled="true" onclick="return false;">PDF (coming soon)</a>
+            <a class="btn" href="#" aria-disabled="true" onclick="return false;">Code (coming soon)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Semi-supervised multimodal sentiment (arXiv) -->
+      <article class="pub">
+        <img class="thumb" src="assets/papers/mm-sentiment.jpg" alt="Thumbnail: Multi-modal video sentiment clustering" />
+        <div>
+          <h3>Enhancing Multi-Modal Video Sentiment Classification Through Semi-Supervised Clustering</h3>
+          <div class="meta">M. Saadatinia, M. Ahmadi, A. Abdollahi · <em>arXiv preprint</em>, 2025</div>
+          <p>Improves video sentiment classification via semi-supervised clustering across audio–visual–text modalities.</p>
+          <div class="actions">
+            <a class="btn" href="https://arxiv.org/pdf/2501.06475" target="_blank" rel="noopener">PDF</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="xp" role="tabpanel" aria-labelledby="Experience" class="" data-active="false">
+      <h2 style="margin:0 0 10px 0">Experience</h2>
+
+      <div class="xp">
+        <div class="top">
+          <h4>Research Intern — Dr. Neiswanger’s Lab</h4>
+          <div class="where">University of Southern California · Jan 2025 – Present · Supervisor: Dr. Willie Neiswanger</div>
+        </div>
+        <ul class="tight">
+          <li>Representing DNA/RNA communities using GNNs and a metagenomic foundation model (METAGENE-1).</li>
+          <li>Paper submitted to AAAI-2026 main track (EvoGLAD).</li>
+        </ul>
+      </div>
+
+      <div class="xp" style="margin-top:12px">
+        <div class="top">
+          <h4>Research Intern — Laboratory of AI & Biomedical Science (LABS)</h4>
+          <div class="where">Columbia University · May 2024 – Present · Supervisor: Dr. Junhao Wen</div>
+        </div>
+        <ul class="tight">
+          <li>Weakly-supervised deep clustering on MRI with genetic signatures; graph representations of imaging features.</li>
+          <li>Preparing a manuscript for ICLR-2026 submission.</li>
+        </ul>
+      </div>
+
+      <div class="xp" style="margin-top:12px">
+        <div class="top">
+          <h4>Student Worker — Center for Advanced Research Computing (CARC)</h4>
+          <div class="where">University of Southern California · Apr 2025 – Present · Supervisor: Dr. Iman Rahbari</div>
+        </div>
+        <ul class="tight">
+          <li>Benchmarking, evaluating, and improving large language models for deep research tasks.</li>
+          <li>Built RAG over CARC videos to enhance CARC-LLM responses.</li>
+        </ul>
+      </div>
+
+      <div class="xp" style="margin-top:12px">
+        <div class="top">
+          <h4>Undergraduate Research Assistant — NLP Lab</h4>
+          <div class="where">Shahid Beheshti University · Sep 2022 – Jan 2023 · Supervisor: Dr. Mehrnoush Shamsfard</div>
+        </div>
+        <ul class="tight">
+          <li>Transformer-based model for informal→formal style transfer in Persian texts.</li>
+        </ul>
+      </div>
+
+      <h3 style="margin:18px 0 10px 0">Teaching (Selected)</h3>
+      <div class="grid" style="grid-template-columns:1fr;gap:10px">
+        <div class="card" style="background:#fff">
+          <ul class="tight">
+            <li>Head‑TA, Artificial Intelligence & Expert Systems (Undergrad), 3 semesters</li>
+            <li>Head‑TA, Signals and Systems (Undergrad), 3 semesters (2021–2023)</li>
+            <li>Head‑TA, Advanced Programming (Undergrad), 4 semesters (2019–2021)</li>
+            <li>TA, Compiler Design (Undergrad), 1 semester (Fall 2020)</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 style="margin:18px 0 10px 0">Selected Projects</h3>
+      <div class="grid" style="gap:12px">
+        <div class="xp">
+          <div class="top">
+            <h4>Deep Learning-Based Schizophrenia Diagnosis</h4>
+            <div class="where"><a href="https://github.com/mehrshad-sdtn/schizo-detector" target="_blank" rel="noopener">Code</a> · <a href="https://github.com/mehrshad-sdtn/BSc-Thesis-Project" target="_blank" rel="noopener">Thesis</a></div>
+          </div>
+          <ul class="tight">
+            <li>CNN with VAE-based augmentation; +3% diagnostic accuracy (to ~99%).</li>
+          </ul>
+        </div>
+
+        <div class="xp">
+          <div class="top">
+            <h4>LoRA Fine-tuned Stable Diffusion for High-Fidelity Face Generation</h4>
+            <div class="where"><a href="https://github.com/mehrshad-sdtn/FaceDiffuser/tree/master" target="_blank" rel="noopener">Code</a></div>
+          </div>
+          <ul class="tight">
+            <li>LoRA fine-tuning for improved realism; preparing model for public release on Hugging Face.</li>
+          </ul>
+        </div>
+
+        <div class="xp">
+          <div class="top">
+            <h4>Interpretable Multi‑Modal Depression Detection</h4>
+            <div class="where"><a href="https://github.com/mehrshad-sdtn/Multi-Modal-Depression-Detection" target="_blank" rel="noopener">Code</a></div>
+          </div>
+          <ul class="tight">
+            <li>Audio‑textual Transformer with interpretability; +2.0% SOTA on DAIC‑WoZ.</li>
+          </ul>
+        </div>
+
+        <div class="xp">
+          <div class="top">
+            <h4>Deep Embedded Clustering (Re‑implementation)</h4>
+            <div class="where"><a href="https://github.com/mehrshad-sdtn/DeepLearning/blob/master/Papers/Deep_Embedded_Clustering.ipynb" target="_blank" rel="noopener">Notebook</a></div>
+          </div>
+          <ul class="tight">
+            <li>Reproduced core results of DEC in PyTorch.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 style="margin:18px 0 10px 0">Certifications & Workshops</h3>
+      <div class="grid" style="gap:10px">
+        <div class="card" style="background:#fff">
+          <ul class="tight">
+            <li>Machine Learning (Andrew Ng) — <a href="https://www.coursera.org/account/accomplishments/verify/V7ZJUPEY8ZQC" target="_blank" rel="noopener">Certificate</a></li>
+            <li>Deep Learning Specialization (5 courses) — <a href="https://coursera.org/share/efc903a41bde33132463a9605458c58d" target="_blank" rel="noopener">Certificate</a></li>
+            <li>Build Basic GANs (Sharon Zhou) — <a href="https://coursera.org/verify/U3XV4AM37S2X" target="_blank" rel="noopener">Certificate</a></li>
+            <li>NLP Lab Summer Workshop (SBU) — <a href="https://github.com/mehrshad-sdtn/NLP-Internship-SBU/blob/master/certificates/MehrshadSaadatinia.pdf" target="_blank" rel="noopener">Certificate</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Mehrshad Saadatinia · Los Angeles, CA · <a href="mailto:saadatin@usc.edu">saadatin@usc.edu</a>
+  </footer>
+
+  <script>
+    // Simple tab switcher
+    const tabs = document.querySelectorAll('.tab[role="tab"]');
+    const panels = document.querySelectorAll('section[role="tabpanel"]');
+    function activate(id){
+      panels.forEach(p => p.dataset.active = (p.id === id));
+      tabs.forEach(t => t.setAttribute('aria-selected', String(t.getAttribute('aria-controls') === id)));
+      history.replaceState(null, '', '#' + id);
+    }
+    tabs.forEach(t => t.addEventListener('click', () => activate(t.getAttribute('aria-controls'))));
+    // On load, honor hash
+    const start = location.hash?.replace('#','');
+    if(start && document.getElementById(start)){ activate(start); }
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
