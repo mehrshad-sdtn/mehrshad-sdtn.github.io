@@ -1,3 +1,6 @@
+
+this is the code for my webiste:
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,29 +14,37 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     :root {
-      --bg: #0a0a0a;
-      --bg-card: #141414;
-      --text: #ffffff;
-      --text-muted: #a0a0a0;
-      --accent: #3b82f6;
-      --border: #2a2a2a;
+      --bg: 
+#0a0a0a;
+      --bg-card: 
+#141414;
+      --text: 
+#ffffff;
+      --text-muted: 
+#a0a0a0;
+      --accent: 
+#3b82f6;
+      --border: 
+#2a2a2a;
     }
-
     [data-theme="light"] {
-      --bg: #ffffff;
-      --bg-card: #f9fafb;
-      --text: #0a0a0a;
-      --text-muted: #6b7280;
-      --accent: #2563eb;
-      --border: #e5e7eb;
+      --bg: 
+#ffffff;
+      --bg-card: 
+#f9fafb;
+      --text: 
+#0a0a0a;
+      --text-muted: 
+#6b7280;
+      --accent: 
+#2563eb;
+      --border: 
+#e5e7eb;
     }
-
     html {
       scroll-behavior: smooth;
     }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -41,7 +52,6 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
-
     /* Navigation */
     nav {
       position: fixed;
@@ -54,7 +64,6 @@
       z-index: 1000;
       padding: 1.5rem 0;
     }
-
     .nav-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -63,7 +72,6 @@
       justify-content: space-between;
       align-items: center;
     }
-
     .logo {
       font-size: 1.25rem;
       font-weight: 600;
@@ -71,24 +79,20 @@
       text-decoration: none;
       letter-spacing: -0.02em;
     }
-
     .nav-links {
       display: flex;
       gap: 2rem;
       list-style: none;
     }
-
     .nav-links a {
       color: var(--text-muted);
       text-decoration: none;
       font-size: 0.95rem;
       transition: color 0.2s;
     }
-
     .nav-links a:hover {
       color: var(--text);
     }
-
     .theme-toggle {
       background: transparent;
       border: 1px solid var(--border);
@@ -102,12 +106,10 @@
       align-items: center;
       gap: 0.5rem;
     }
-
     .theme-toggle:hover {
       color: var(--text);
       border-color: var(--text);
     }
-
     /* Hero Section */
     .hero {
       min-height: 100vh;
@@ -117,11 +119,9 @@
       padding: 8rem 2rem 4rem;
       text-align: center;
     }
-
     .hero-content {
       max-width: 900px;
     }
-
     .hero-label {
       color: var(--text-muted);
       font-size: 0.95rem;
@@ -129,7 +129,6 @@
       letter-spacing: 0.15em;
       margin-bottom: 1.5rem;
     }
-
     .hero h1 {
       font-size: clamp(3rem, 8vw, 5.5rem);
       font-weight: 700;
@@ -137,7 +136,6 @@
       margin-bottom: 1.5rem;
       letter-spacing: -0.03em;
     }
-
     .hero-subtitle {
       font-size: clamp(1.1rem, 2.5vw, 1.5rem);
       color: var(--text-muted);
@@ -147,14 +145,12 @@
       margin-left: auto;
       margin-right: auto;
     }
-
     .cta-buttons {
       display: flex;
       gap: 1rem;
       justify-content: center;
       flex-wrap: wrap;
     }
-
     .btn {
       padding: 1rem 2.5rem;
       font-size: 1rem;
@@ -164,35 +160,29 @@
       transition: all 0.3s;
       display: inline-block;
     }
-
     .btn-primary {
       background: var(--accent);
       color: white;
       border: 2px solid var(--accent);
     }
-
     .btn-primary:hover {
       background: transparent;
       color: var(--accent);
     }
-
     .btn-secondary {
       background: transparent;
       color: var(--text);
       border: 2px solid var(--border);
     }
-
     .btn-secondary:hover {
       border-color: var(--text);
     }
-
     /* Section Styles */
     section {
       padding: 6rem 2rem;
       max-width: 1200px;
       margin: 0 auto;
     }
-
     .section-label {
       color: var(--text-muted);
       font-size: 0.85rem;
@@ -200,7 +190,6 @@
       letter-spacing: 0.15em;
       margin-bottom: 1rem;
     }
-
     .section-title {
       font-size: clamp(2rem, 5vw, 3.5rem);
       font-weight: 700;
@@ -208,7 +197,6 @@
       margin-bottom: 3rem;
       letter-spacing: -0.02em;
     }
-
     /* About Section */
     .about-grid {
       display: grid;
@@ -216,42 +204,34 @@
       gap: 3rem;
       margin-top: 3rem;
     }
-
     .about-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 2.5rem;
     }
-
     .about-card h3 {
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
       font-weight: 600;
     }
-
     .about-card p, .about-card ul {
       color: var(--text-muted);
       line-height: 1.8;
     }
-
     .about-card ul {
       list-style: none;
     }
-
     .about-card li {
       padding: 0.75rem 0;
       border-bottom: 1px solid var(--border);
     }
-
     .about-card li:last-child {
       border-bottom: none;
     }
-
     .about-card strong {
       color: var(--text);
     }
-
     .links-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
@@ -259,7 +239,6 @@
       margin-top: 2rem;
       justify-items: center;
     }
-
     .link-chip {
       background: transparent;
       border: none;
@@ -274,16 +253,13 @@
       align-items: center;
       justify-content: center;
     }
-
     .link-chip:hover {
       color: var(--accent);
       transform: translateY(-2px);
     }
-
     .link-chip svg {
       flex-shrink: 0;
     }
-
     /* Research Section */
     .research-intro {
       font-size: 1.25rem;
@@ -292,12 +268,10 @@
       margin-bottom: 4rem;
       max-width: 800px;
     }
-
     .publications-grid {
       display: grid;
       gap: 2rem;
     }
-
     .publication-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -308,12 +282,10 @@
       gap: 2rem;
       transition: all 0.3s;
     }
-
     .publication-card:hover {
       border-color: var(--accent);
       transform: translateY(-4px);
     }
-
     .pub-thumbnail {
       width: 100%;
       height: 150px;
@@ -321,25 +293,21 @@
       border-radius: 8px;
       background: var(--bg);
     }
-
     .pub-content h3 {
       font-size: 1.35rem;
       margin-bottom: 0.75rem;
       line-height: 1.3;
     }
-
     .pub-meta {
       color: var(--text-muted);
       font-size: 0.9rem;
       margin-bottom: 1rem;
     }
-
     .pub-links {
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
     }
-
     .pub-link {
       color: var(--accent);
       text-decoration: none;
@@ -349,42 +317,35 @@
       border-radius: 6px;
       transition: all 0.3s;
     }
-
     .pub-link:hover {
       border-color: var(--accent);
       background: rgba(59, 130, 246, 0.1);
     }
-
     /* Experience Section */
     .experience-grid {
       display: grid;
       gap: 1.5rem;
       margin-top: 3rem;
     }
-
     .experience-item {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 2rem;
     }
-
     .experience-item h3 {
       font-size: 1.25rem;
       margin-bottom: 0.5rem;
     }
-
     .experience-meta {
       color: var(--text-muted);
       font-size: 0.9rem;
       margin-bottom: 1rem;
     }
-
     .experience-description {
       color: var(--text-muted);
       line-height: 1.7;
     }
-
     /* Footer */
     footer {
       background: var(--bg-card);
@@ -392,22 +353,18 @@
       padding: 4rem 2rem;
       text-align: center;
     }
-
     .footer-content {
       max-width: 1200px;
       margin: 0 auto;
     }
-
     .footer-title {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
-
     .footer-subtitle {
       color: var(--text-muted);
       margin-bottom: 2rem;
     }
-
     .footer-links {
       display: flex;
       gap: 2rem;
@@ -416,7 +373,6 @@
       margin: 2rem 0;
       align-items: center;
     }
-
     .footer-links a {
       color: var(--text-muted);
       text-decoration: none;
@@ -425,63 +381,50 @@
       align-items: center;
       gap: 0.5rem;
     }
-
     .footer-links a:hover {
       color: var(--accent);
     }
-
     .copyright {
       color: var(--text-muted);
       font-size: 0.85rem;
       margin-top: 2rem;
     }
-
     /* Mobile Responsive */
     @media (max-width: 768px) {
       .nav-links {
         display: none;
       }
-
       .theme-toggle {
         margin-left: auto;
       }
-
       .about-grid {
         grid-template-columns: 1fr;
       }
-
       .about-card > div[style*="grid-template-columns"] {
         grid-template-columns: 1fr !important;
         text-align: center;
       }
-
       .about-card img {
         margin: 0 auto;
         max-width: 150px;
       }
-
       .publication-card {
         grid-template-columns: 1fr;
       }
-
       .hero {
         padding: 6rem 1.5rem 3rem;
       }
-
       section {
         padding: 4rem 1.5rem;
       }
-
       .links-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
-
     /* Smooth transitions */
     * {
       transition: background-color 0.3s, border-color 0.3s;
     }
-
     /* Scroll animations */
     @keyframes fadeInUp {
       from {
@@ -493,7 +436,6 @@
         transform: translateY(0);
       }
     }
-
     .fade-in {
       animation: fadeInUp 0.8s ease-out;
     }
@@ -517,7 +459,6 @@
       </div>
     </div>
   </nav>
-
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content fade-in">
@@ -529,11 +470,10 @@
       </div>
     </div>
   </section>
-
   <!-- About Section -->
   <section id="about">
     <div class="section-label">WHO I AM</div>
-    
+
     <div class="about-grid">
       <div class="about-card" style="grid-column: 1 / -1;">
         <div style="display: grid; grid-template-columns: 180px 1fr; gap: 2rem; align-items: start;">
@@ -571,7 +511,6 @@
         </div>
       </div>
     </div>
-
     <div class="about-grid" style="margin-top: 2rem;">
       <div class="about-card">
         <h3>Education</h3>
@@ -588,7 +527,6 @@
           </li>
         </ul>
       </div>
-
       <div class="about-card">
         <h3>Technical Skills</h3>
         <p>
@@ -603,18 +541,16 @@
       </div>
     </div>
   </section>
-
   <!-- Research Section -->
   <section id="research">
     <div class="section-label">MY WORK</div>
     <h2 class="section-title">Research & Publications</h2>
-    
+
     <p class="research-intro">
       My research explores the fundamental mechanisms of intelligence through novel neural 
       architectures and learning paradigms. I focus on developing interpretable AI systems 
       that can both understand and explain their decision-making processes.
     </p>
-
     <div class="publications-grid">
       <article class="publication-card">
         <img class="pub-thumbnail" src="assets/one.png" alt="Schizophrenia diagnosis research" />
@@ -629,7 +565,6 @@
           </div>
         </div>
       </article>
-
       <article class="publication-card">
         <img class="pub-thumbnail" src="assets/two.png" alt="Nature Communications research" />
         <div class="pub-content">
@@ -642,7 +577,6 @@
           </div>
         </div>
       </article>
-
       <article class="publication-card">
         <img class="pub-thumbnail" src="assets/five.png" alt="CircuitSteer research" />
         <div class="pub-content">
@@ -655,7 +589,6 @@
           </div>
         </div>
       </article>
-
       <article class="publication-card">
         <img class="pub-thumbnail" src="assets/four.png" alt="EvoGLAD research" />
         <div class="pub-content">
@@ -668,7 +601,6 @@
           </div>
         </div>
       </article>
-
       <article class="publication-card">
         <img class="pub-thumbnail" src="assets/three.png" alt="Video sentiment classification" />
         <div class="pub-content">
@@ -683,12 +615,10 @@
       </article>
     </div>
   </section>
-
   <!-- Experience Section -->
   <section id="experience">
     <div class="section-label">WHERE I'VE WORKED</div>
     <h2 class="section-title">Experience</h2>
-
     <div class="experience-grid">
       <div class="experience-item">
         <h3>Research Intern</h3>
@@ -697,7 +627,6 @@
           Graph representations for metagenomic communities (METAGENE-1)
         </p>
       </div>
-
       <div class="experience-item">
         <h3>Research Intern</h3>
         <div class="experience-meta">LABS @ Columbia University & USC · May 2024 – Present</div>
@@ -705,7 +634,6 @@
           Disease subtype discovery via weakly supervised deep clustering
         </p>
       </div>
-
       <div class="experience-item">
         <h3>AI Engineer</h3>
         <div class="experience-meta">USC CARC · Apr 2024 – Dec 2025</div>
@@ -715,7 +643,6 @@
       </div>
     </div>
   </section>
-
   <!-- Footer -->
   <footer>
     <div class="footer-content">
@@ -724,7 +651,7 @@
         Interested in collaboration, research opportunities, or just want to chat about AI?
       </p>
       <a href="/cdn-cgi/l/email-protection#8af9ebebeeebfee3e4cafff9e9a4efeeff" class="btn btn-primary">Get In Touch</a>
-      
+
       <div class="footer-links">
         <a href="/cdn-cgi/l/email-protection#b6c5d7d7d2d7c2dfd8f6c3c5d598d3d2c3" title="Email">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -762,37 +689,32 @@
           <span>CV</span>
         </a>
       </div>
-
       <div class="copyright">
         © 2025 Mehrshad Saadatinia. All rights reserved.
       </div>
     </div>
   </footer>
-
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     document.addEventListener('DOMContentLoaded', () => {
       // Theme toggle functionality
       const themeToggle = document.getElementById('themeToggle');
       const themeIcon = document.getElementById('themeIcon');
       const html = document.documentElement;
-
       // Load saved theme preference or default to dark
       const savedTheme = localStorage.getItem('theme') || 'dark';
       html.setAttribute('data-theme', savedTheme);
       themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-
       themeToggle.addEventListener('click', () => {
         const currentTheme = html.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+
         html.setAttribute('data-theme', newTheme);
         themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-        
+
         // Save preference
         localStorage.setItem('theme', newTheme);
       });
     });
-
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -806,10 +728,948 @@
         }
       });
     });
-
     // Add fade-in animation on scroll
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -100px 0px'
     };
 
+remove the fancy title that says: Bridging Machine Learning Research and Real-World Systems across LLMs, Multimodal AI, and Scientific Domains
+
+Show more
+3:01 PM
+Here's the updated hero section with that title removed:
+
+
+Check the uploads directory
+Check the uploads directory
+Since no file was uploaded, I'll provide the exact change you need. In your HTML, find this block in the hero section:
+
+html
+<h1>Bridging Machine Learning Research and Real-World Systems across LLMs, Multimodal AI, and Scientific Domains</h1>
+And simply delete that entire line. The hero section will then go straight from the label to the CTA buttons:
+
+html
+<div class="hero-content fade-in">
+  <div class="hero-label">MASTER'S STUDENT · USC</div>
+  <div class="cta-buttons">
+    <a href="#research" class="btn btn-primary">Explore My Research</a>
+    <a href="mailto:saadatin@usc.edu" class="btn btn-secondary">Get In Touch</a>
+  </div>
+</div>
+That's the only change needed — just remove the <h1>...</h1> line entirely.
+
+rewrite the whole thing and render it so i can see before deploy
+
+3:02 PM
+
+Read the frontend design skill
+Read the frontend design skill
+Now I'll craft a completely redesigned, visually distinctive personal website for Mehrshad.
+
+
+Created a file, read a file
+Created a file, read a file
+
+Redesigned personal website for Mehrshad Saadatinia
+index.html
+
+Presented file
+Done
+Here's the full redesign. Key changes from the original:
+
+Aesthetic direction — editorial/refined dark with warm gold tones (DM Serif Display + DM Mono pairing). Feels more like a high-end portfolio than a generic dev site.
+
+Hero — name-first, bottom-anchored layout with a vertical decorative line and scroll indicator. No busy subtitle text.
+
+About — sticky photo on the left with the bio flowing on the right, education and skills in a clean two-column grid below.
+
+Publications — horizontal card list with thumbnail on the left. Cards slide right on hover with the image desaturating back to colour.
+
+Experience — clean timeline list, date column on the left, content on the right.
+
+Footer — bold CTA with the italic "remarkable" accent, links stacked right.
+
+Just drop your existing assets/ folder alongside the file and it's deploy-ready. Let me know what you'd like adjusted — layout, colours, fonts, content, anything.
+
+Index
+Code · HTML 
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Index · HTML
+Copy
+
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mehrshad Saadatinia — AI Researcher</title>
+  <meta name="description" content="ML researcher and engineer at USC working on mechanistic interpretability, multimodal AI, and deep learning for healthcare." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg:        #080808;
+      --surface:   #0f0f0f;
+      --surface2:  #161616;
+      --border:    rgba(255,255,255,0.07);
+      --text:      #f0ede8;
+      --muted:     rgba(240,237,232,0.45);
+      --accent:    #c8a97e;
+      --accent2:   #7eb3c8;
+      --red:       #c87e7e;
+      --glow:      rgba(200,169,126,0.12);
+    }
+    [data-theme="light"] {
+      --bg:        #f5f2ed;
+      --surface:   #edeae4;
+      --surface2:  #e4e0d9;
+      --border:    rgba(0,0,0,0.09);
+      --text:      #1a1814;
+      --muted:     rgba(26,24,20,0.45);
+      --accent:    #8b6a3e;
+      --accent2:   #3e6a8b;
+      --red:       #8b3e3e;
+      --glow:      rgba(139,106,62,0.08);
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* ── Noise overlay ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.025;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.4rem 0;
+      background: linear-gradient(to bottom, var(--bg) 60%, transparent);
+      transition: background 0.4s;
+    }
+    .nav-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'DM Mono', monospace;
+      font-weight: 300;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .theme-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .theme-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 2.5rem 7rem;
+      max-width: 1160px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .hero-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s ease forwards;
+    }
+    .hero-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(4rem, 9vw, 8rem);
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.35s ease forwards;
+    }
+    .hero-name em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero-desc {
+      margin-top: 2.5rem;
+      max-width: 600px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.5s ease forwards;
+    }
+    .hero-actions {
+      margin-top: 3rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.65s ease forwards;
+    }
+    .btn-gold {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      border-radius: 2px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .btn-gold:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn-ghost {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.85rem 2rem;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+
+    /* Scroll indicator */
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 2.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      opacity: 0;
+      animation: fadeUp 1s 1s ease forwards;
+    }
+    .scroll-hint::before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, transparent, var(--muted));
+      animation: scrollLine 2s 1.5s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%, 100% { transform: scaleY(1); opacity: 1; }
+      50% { transform: scaleY(0.5); opacity: 0.4; }
+    }
+
+    /* Decorative lines */
+    .hero-line {
+      position: absolute;
+      top: 0; bottom: 0;
+      right: 2.5rem;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent 10%, var(--border) 40%, var(--border) 60%, transparent 90%);
+    }
+
+    /* ── WRAPPER ── */
+    .wrapper {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+    }
+
+    /* ── SECTION BASE ── */
+    .section {
+      padding: 8rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1.5rem;
+      margin-bottom: 5rem;
+    }
+    .section-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+    }
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── ABOUT ── */
+    .about-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .about-photo-wrap {
+      position: sticky;
+      top: 8rem;
+    }
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      filter: grayscale(100%) contrast(1.05);
+      border-radius: 3px;
+    }
+    .about-photo-caption {
+      margin-top: 1.25rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .about-links {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .icon-link {
+      width: 36px; height: 36px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .icon-link:hover { border-color: var(--accent); color: var(--accent); }
+
+    .about-body p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .about-body p strong { color: var(--text); font-weight: 500; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .info-block h4 {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+    .edu-item {
+      margin-bottom: 1.5rem;
+    }
+    .edu-item strong {
+      display: block;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .edu-item span {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+    .tag:hover { border-color: var(--accent2); color: var(--accent2); }
+
+    /* ── PUBLICATIONS ── */
+    .pub-list { display: grid; gap: 2px; }
+
+    .pub-item {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+      background: var(--surface);
+    }
+    .pub-item:hover {
+      border-color: var(--accent);
+      transform: translateX(4px);
+    }
+    .pub-thumb {
+      width: 100%;
+      height: 100%;
+      min-height: 140px;
+      object-fit: cover;
+      filter: grayscale(80%);
+      transition: filter 0.4s;
+    }
+    .pub-item:hover .pub-thumb { filter: grayscale(20%); }
+
+    .pub-body {
+      padding: 2rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .pub-venue {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .pub-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      line-height: 1.3;
+      color: var(--text);
+    }
+    .pub-authors {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .pub-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .pub-btn {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      color: var(--accent2);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .pub-btn:hover { border-color: var(--accent2); background: rgba(126,179,200,0.08); }
+    .pub-btn.dimmed {
+      color: var(--muted);
+      cursor: default;
+    }
+    .pub-btn.dimmed:hover { border-color: var(--border); background: none; }
+
+    /* ── EXPERIENCE ── */
+    .exp-list { display: grid; gap: 1px; }
+    .exp-item {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 3rem;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .exp-item:first-child { border-top: 1px solid var(--border); }
+    .exp-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      padding-top: 0.15rem;
+    }
+    .exp-role {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+    }
+    .exp-org {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .exp-desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 6rem 0 4rem;
+    }
+    .footer-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4rem;
+      align-items: end;
+    }
+    .footer-cta-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+    .footer-heading {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+    }
+    .footer-heading em { font-style: italic; color: var(--accent); }
+    .footer-right {
+      text-align: right;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: flex-end;
+      margin-bottom: 2rem;
+    }
+    .footer-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--accent); }
+    .copyright {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .about-layout { grid-template-columns: 1fr; }
+      .about-photo-wrap { position: static; display: flex; gap: 1.5rem; align-items: flex-start; }
+      .about-photo { width: 140px; aspect-ratio: auto; }
+      .two-col { grid-template-columns: 1fr; }
+      .pub-item { grid-template-columns: 1fr; }
+      .pub-thumb { min-height: 180px; width: 100%; }
+      .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .footer-right { text-align: left; }
+      .footer-links { align-items: flex-start; }
+      .nav-links { display: none; }
+      .hero-line { display: none; }
+      .scroll-hint { display: none; }
+    }
+
+    /* Selection */
+    ::selection { background: var(--accent); color: var(--bg); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="#">M. Saadatinia</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="assets/CV_MehrshadSaadatinia.pdf" target="_blank">CV ↗</a></li>
+      </ul>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+        <span id="themeIcon">☀</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero wrapper">
+  <div class="hero-line"></div>
+  <div>
+    <div class="hero-tag">Master's Student &nbsp;·&nbsp; USC &nbsp;·&nbsp; Los Angeles</div>
+    <h1 class="hero-name">Mehrshad<br><em>Saadatinia</em></h1>
+    <p class="hero-desc">
+      ML researcher and engineer specialising in mechanistic interpretability, multimodal AI, and deep learning for healthcare. Building systems that are not just capable — but understandable.
+    </p>
+    <div class="hero-actions">
+      <a href="#research" class="btn-gold">Research</a>
+      <a href="mailto:saadatin@usc.edu" class="btn-ghost">saadatin@usc.edu</a>
+      <a href="assets/CV_MehrshadSaadatinia.pdf" target="_blank" class="btn-ghost">Download CV ↗</a>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</div>
+
+<!-- ABOUT -->
+<div class="wrapper">
+  <section class="section" id="about">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-layout">
+      <div class="about-photo-wrap reveal">
+        <img class="about-photo" src="assets/headshot.jpg" alt="Mehrshad Saadatinia" />
+        <div class="about-photo-caption">USC · Los Angeles</div>
+        <div class="about-links">
+          <a class="icon-link" href="mailto:saadatin@usc.edu" title="Email">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a class="icon-link" href="https://www.linkedin.com/in/mehrshad-saadatinia-a1bb1b19a/" target="_blank" title="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a class="icon-link" href="https://github.com/mehrshad-sdtn" target="_blank" title="GitHub">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a class="icon-link" href="https://scholar.google.com/citations?user=ZZhMlLYAAAAJ&hl=en" target="_blank" title="Google Scholar">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="about-body">
+        <p class="reveal">
+          I am a machine learning researcher and engineer completing an <strong>M.S. in Computer Science at the University of Southern California</strong>, with a background in Computer Engineering from Shahid Beheshti University.
+        </p>
+        <p class="reveal">
+          My work spans <strong>deep learning theory, bioinformatics, and medical AI</strong>, with a focus on multiview and multimodal learning, generative and probabilistic models, and graph neural networks — leading to peer-reviewed publications in <strong>Nature Communications (2025)</strong> and <strong>IEEE Access (2024)</strong>.
+        </p>
+        <p class="reveal">
+          More recently I have concentrated on <strong>large language models</strong>, particularly alignment, safety, and mechanistic interpretability. My ongoing work explores circuit-level understanding and behavioral steering of LLMs, including multi-layer steering methods inspired by transformer circuit discovery.
+        </p>
+        <p class="reveal">
+          In parallel, I build end-to-end ML systems across multimodal RAG, LLM evaluation, and deep research agent pipelines. I am particularly interested in bridging theory and real-world systems — taking insights from representation learning and interpretability into practical, scalable AI.
+        </p>
+
+        <div class="two-col reveal">
+          <div class="info-block">
+            <h4>Education</h4>
+            <div class="edu-item">
+              <strong>University of Southern California</strong>
+              <span>MS Computer Science &nbsp;·&nbsp; Jan 2024 – Dec 2025</span>
+            </div>
+            <div class="edu-item">
+              <strong>Shahid Beheshti University</strong>
+              <span>BSc Computer Engineering &nbsp;·&nbsp; Sep 2018 – Feb 2023</span>
+            </div>
+          </div>
+          <div class="info-block">
+            <h4>Technologies</h4>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">C/C++</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Google Cloud</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Vector DBs</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Research &amp; Publications</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="pub-list">
+
+      <article class="pub-item reveal">
+        <img class="pub-thumb" src="assets/five.png" alt="CircuitSteer" />
+        <div class="pub-body">
+          <div>
+            <div class="pub-venue">Under Submission · ACL 2026 · 2025</div>
+            <h3 class="pub-title">CircuitSteer: Circuit Discovery-Based Steering via Sparse Autoencoder Feature Flow</h3>
+            <p class="pub-authors">M. Saadatinia, A. Abbasi, A. Aryashad, P. Razmara</p>
+          </div>
+          <div class="pub-actions">
+            <span class="pub-btn dimmed">Available upon request</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub-item reveal">
+        <img class="pub-thumb" src="assets/two.png" alt="Nature Communications" />
+        <div class="pub-body">
+          <div>
+            <div class="pub-venue">Nature Communications · 2025</div>
+            <h3 class="pub-title">Multi-organ metabolome biological age &amp; cardiometabolic risk</h3>
+            <p class="pub-authors">F. Anagnostakis, S. Ko, M. Saadatinia, J. Wang, C. Davatzikos, J. Wen</p>
+          </div>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://www.nature.com/articles/s41467-025-59964-z" target="_blank">Paper ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub-item reveal">
+        <img class="pub-thumb" src="assets/four.png" alt="EvoGLAD" />
+        <div class="pub-body">
+          <div>
+            <div class="pub-venue">Under Submission · AAAI 2026 · 2025</div>
+            <h3 class="pub-title">EvoGLAD: Evolving Graph-Level Representations for Anomaly Detection in Metagenomic Communities</h3>
+            <p class="pub-authors">M. Saadatinia, W. Neiswanger</p>
+          </div>
+          <div class="pub-actions">
+            <span class="pub-btn dimmed">Available upon request</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub-item reveal">
+        <img class="pub-thumb" src="assets/three.png" alt="Video Sentiment" />
+        <div class="pub-body">
+          <div>
+            <div class="pub-venue">arXiv Preprint · 2025</div>
+            <h3 class="pub-title">Enhancing Multi-Modal Video Sentiment Classification Through Semi-Supervised Clustering</h3>
+            <p class="pub-authors">M. Saadatinia, M. Ahmadi, A. Abdollahi</p>
+          </div>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://arxiv.org/pdf/2501.06475" target="_blank">Paper ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub-item reveal">
+        <img class="pub-thumb" src="assets/one.png" alt="Schizophrenia" />
+        <div class="pub-body">
+          <div>
+            <div class="pub-venue">IEEE Access · 2024</div>
+            <h3 class="pub-title">Explainable Deep Learning-Based for Schizophrenia Diagnosis via Generative Data Augmentation</h3>
+            <p class="pub-authors">M. Saadatinia, A. Salimi-Badr</p>
+          </div>
+          <div class="pub-actions">
+            <a class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10599257" target="_blank">Paper ↗</a>
+            <a class="pub-btn" href="https://github.com/mehrshad-sdtn/schizo-detector" target="_blank">Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="exp-list">
+      <div class="exp-item reveal">
+        <div class="exp-date">Jan 2025 – Present</div>
+        <div>
+          <div class="exp-role">Research Intern</div>
+          <div class="exp-org">Dr. Neiswanger's Lab · USC</div>
+          <p class="exp-desc">Graph representations for metagenomic communities (METAGENE-1). Developing EvoGLAD, a framework for graph-level anomaly detection in microbial ecology using evolutionary graph neural networks.</p>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-date">May 2024 – Present</div>
+        <div>
+          <div class="exp-role">Research Intern</div>
+          <div class="exp-org">LABS · Columbia University &amp; USC</div>
+          <p class="exp-desc">Disease subtype discovery via weakly supervised deep clustering. Collaborating on multi-organ metabolomics research published in Nature Communications, applying multiview learning to large-scale biobank data.</p>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-date">Apr 2024 – Dec 2025</div>
+        <div>
+          <div class="exp-role">AI Engineer</div>
+          <div class="exp-org">USC CARC</div>
+          <p class="exp-desc">Developing a novel LLM-based approach for deep academic research. Building end-to-end pipelines combining multimodal RAG, LLM evaluation and benchmarking, and agentic workflows for scientific discovery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-cta-label">Get in touch</div>
+      <h2 class="footer-heading">Let's build something<br><em>remarkable</em></h2>
+      <a href="mailto:saadatin@usc.edu" class="btn-gold">saadatin@usc.edu</a>
+    </div>
+    <div class="footer-right">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/mehrshad-saadatinia-a1bb1b19a/" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/mehrshad-sdtn" target="_blank">GitHub ↗</a>
+        <a href="https://scholar.google.com/citations?user=ZZhMlLYAAAAJ&hl=en" target="_blank">Google Scholar ↗</a>
+        <a href="assets/CV_MehrshadSaadatinia.pdf" target="_blank">Download CV ↗</a>
+      </div>
+      <div class="copyright">© 2025 Mehrshad Saadatinia</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Theme toggle
+  const btn = document.getElementById('themeToggle');
+  const icon = document.getElementById('themeIcon');
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme') || 'dark';
+  html.setAttribute('data-theme', saved);
+  icon.textContent = saved === 'dark' ? '☀' : '☽';
+  btn.addEventListener('click', () => {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    icon.textContent = next === 'dark' ? '☀' : '☽';
+    localStorage.setItem('theme', next);
+  });
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+  reveals.forEach(el => io.observe(el));
+
+  // Nav background on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.background = window.scrollY > 60
+      ? 'var(--bg)'
+      : 'linear-gradient(to bottom, var(--bg) 60%, transparent)';
+  }, { passive: true });
+</script>
+</body>
+</html>
